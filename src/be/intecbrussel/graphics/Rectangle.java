@@ -1,6 +1,7 @@
 package be.intecbrussel.graphics;
 
 public class Rectangle extends Shape {
+
     private static int count;
     public static final int ANGLES = 4;
     private int x;
@@ -24,7 +25,7 @@ public class Rectangle extends Shape {
 
     }
 
-    Shape rectangle = new Rectangle ();
+    Shape rectangle = new Rectangle();
 
     public void setWidth(int width2) {
         if (width2 < 0) {
@@ -60,5 +61,15 @@ public class Rectangle extends Shape {
 
     public double getPerimeter() {
         return (length * 2) + (width * 2);
+    }
+
+    public int grow(int d) {
+        return (d);
+
+    }
+
+    public static int getCount(){
+        count++;
+        return count;
     }
 }
