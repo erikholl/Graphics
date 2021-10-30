@@ -67,8 +67,8 @@ public class Triangle extends Shape{
 
     @Override
     public double getPerimeter() {
-        return (perpendicular + width + height);
-        // formula incorrect, we are aware...
+        return (width + height) + Math.sqrt((Math.pow(width, 2) + Math.pow(height
+                , 2)));
     }
 
     public static int getCount() {
