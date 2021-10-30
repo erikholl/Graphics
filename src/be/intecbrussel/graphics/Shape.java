@@ -16,7 +16,7 @@ public abstract class Shape {
     // constructor method without parameters
     public Shape() { // here we allow to call a 'shape' without any value
         // provided
-        this(0, 0); // here we provide 2 default values to allow moving to the
+        this(1, 1); // here we provide 2 default values to allow moving to the
         // constructor with 2 parameters
     }
 
@@ -40,12 +40,12 @@ public abstract class Shape {
     }
 
     // getter method for the value of x (we need to RETURN a value)
-    public int getX(int x) {
+    public int getX() {
         return x;
     }
 
     // getter method for the value of x (we need to RETURN a value)
-    public int getY(int y) {
+    public int getY() {
         return y;
     }
 
