@@ -1,26 +1,24 @@
 package be.intecbrussel.animal;
 
 public abstract class Animal {
-    private String animal;
+    private String name;
 
-
-
-
-    public String Animal() {
-        return animal;
+    public Animal() {
+        this("no name was given");
     }
-    public String Animal(String name) {
+
+    public Animal(String name) {
+        setName(name);
+    }
+
+    public String getName(){
         return name;
     }
 
-
-
-    public String getName(){
-        return getName();
+    public void setName(String name){
+        this.name = name;
     }
-    public String setName(String name){
-        return setName(name);
-    }
+
     public void move(){
         move();
     }

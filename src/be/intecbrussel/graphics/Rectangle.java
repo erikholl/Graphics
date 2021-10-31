@@ -4,30 +4,27 @@ public class Rectangle extends Shape {
 
     private static int count;
     public static final int ANGLES = 4;
-    private int x;
-    private int y;
     private int width;
-    private int length;
-
+    private int height;
 
     public Rectangle() {
         this(1, 1);
     }
 
-    public Rectangle(int width, int length) {
+    public Rectangle(int height, int width) {
+        this(height, width, 0, 0);
     }
 
-    public Rectangle(int length, int width, int x, int y) {
+    public Rectangle(int height, int width, int x, int y) {
         setWidth(width);
-        setLength(length);
+        setHeight(height);
         super.setX(x);
         super.setY(y);
 
     }
     public Rectangle(Rectangle rectangle){
-        this(rectangle.getWidth(),rectangle.getLength(),rectangle.getX(),rectangle.getY());
+        this(rectangle.getWidth(),rectangle.getHeight(),rectangle.getX(),rectangle.getY());
     }
-
 
     public void setWidth(int width2) {
         if (width2 < 0) {
@@ -37,13 +34,13 @@ public class Rectangle extends Shape {
         }
     }
 
-    public void setLength(int length) {
-        boolean length2IsNegative = length < 0;
+    public void setHeight(int height) {
+        boolean length2IsNegative = height < 0;
 
         if (length2IsNegative) {
-            this.length = (int) -length;
+            this.height = (int) -height;
         } else {
-            this.length = (int) length;
+            this.height = (int) height;
         }
     }
 
@@ -51,23 +48,22 @@ public class Rectangle extends Shape {
         return width;
     }
 
-    public int getLength() {
-        return length;
+    public int getHeight() {
+        return height;
     }
 
-
+    @Override
     public double getArea() {
-        double area = length * width;
-        return area;
+        return(height * width);
     }
 
+    @Override
     public double getPerimeter() {
-        return (length * 2) + (width * 2);
+        return (height * 2) + (width * 2);
     }
 
     public int grow(int d) {
         return (d);
-
     }
 
     public static int getCount(){

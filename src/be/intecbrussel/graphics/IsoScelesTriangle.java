@@ -36,7 +36,6 @@ public class IsoScelesTriangle extends Triangle {
     @Override
     public void setWidth(int width) {
         super.setWidth(width);
-        //
     }
 
     @Override
