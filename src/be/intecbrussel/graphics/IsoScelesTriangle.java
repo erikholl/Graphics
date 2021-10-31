@@ -34,13 +34,16 @@ public class IsoScelesTriangle extends Triangle {
     // methods
     @Override
     public void setWidth(int width) {
-
+        super.setWidth(width);
     }
 
     @Override
     public void setPerpendicular(int perpendicular) {
-        setPerpendicular(4);
+        super.setPerpendicular(perpendicular);
     }
+    // we refer here back to the super method, so it does not make a lot of
+    // sense to override - we're doing it still though, to illustrate we get
+    // the hierarchy and how to refer back.
 
     public static int getCount() {
         return count;
