@@ -1,25 +1,24 @@
 package be.intecbrussel.animal;
 
-import javax.crypto.spec.PSource;
 
-public class Cat /* extends animal */ {
+public class Cat extends Animal {
 
-//    public Cat() {
-//        this("Rachid");
-//    }
-//
-//    public Cat(String name) {
-//        super(name);
-//    }
-//
-//    @Override
-//    public void move() {
-//        println = "Catmove"
-//    }
-//
-//
-//    @Override
-//    public void makeNoise() {
-//         println = "Miaaauw";
-//    }
+    public Cat() {
+        this("Rachid");
+    }
+
+    public Cat(String name) {
+        super.setName(name);
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Cat moves");
+    }
+
+
+    @Override
+    public void makeNoise() {
+        System.out.println("Miaaauw");
+    }
 }

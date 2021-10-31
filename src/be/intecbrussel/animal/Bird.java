@@ -1,10 +1,11 @@
 package be.intecbrussel.animal;
 
-public class Bird {
+public class Bird extends Animal {
 
-    public Bird (){this("Eagle");}
+    public Bird (){
+        this("Eagle");}
     public Bird ( String name){
-//        super(name);
+        super.setName(name);
     }
 
 
@@ -21,5 +22,4 @@ public class Bird {
 
 
 
-}
 }

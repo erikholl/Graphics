@@ -24,8 +24,10 @@ public class Rectangle extends Shape {
         super.setY(y);
 
     }
+    public Rectangle(Rectangle rectangle){
+        this(rectangle.getWidth(),rectangle.getLength(),rectangle.getX(),rectangle.getY());
+    }
 
-    Shape rectangle = new Rectangle();
 
     public void setWidth(int width2) {
         if (width2 < 0) {
