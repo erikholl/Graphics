@@ -1,12 +1,14 @@
+// Zuhur and Uneys
+
 package be.intecbrussel.graphics;
 
 public class Circle extends Shape{
-
+    // variables
     public static int Angles = 0;
     private static int count;
-
     private int radius;
 
+    // initialisation block
     {
         count++;
     }
@@ -48,11 +50,13 @@ public class Circle extends Shape{
     public double getPerimeter(){
         return (2 * radius);
     }
+    // the formulas in the overrides are not correct, it is the programming
+    // logic that is important :)
 
     public void grow(int d){
         setRadius(radius * d);
     }
-    // we make this a static methode because that is what Manueel expected for us. see in the book for more details//
+
     public static int getCount(){
         return count;
     }

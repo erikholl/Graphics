@@ -1,3 +1,5 @@
+// Marouane, Mustafa, Erik
+
 package be.intecbrussel.graphics;
 
 public class IsoScelesTriangle extends Triangle {
@@ -42,15 +44,14 @@ public class IsoScelesTriangle extends Triangle {
     public void setPerpendicular(int perpendicular) {
         super.setPerpendicular(perpendicular);
     }
-    // we refer for setWidth and setPerpendicular back to the super
-    // method, so it does not make a lot of sense to override. we're doing
-    // it anyway, to illustrate we understand hierarchy and how to
-    // refer back. If we'd know the specific formula for width and
-    // perpendicular of IsoScelesTriangle, we'd included these instead.
+    // referencing to the superclass is not correct in above override methods
+    // (as we want to override the method in superclass)
+    // however, we did not find the correct mathematical solution; we want to
+    // illustrate awareness of how to refer back and being aware of what we
+    // SHOULD put (a class specific formula for width and perpendicular)
 
     public static int getCount() {
         return count;
     }
-
 
 }

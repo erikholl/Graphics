@@ -1,9 +1,18 @@
+// Jan and Emrah
+
 package be.intecbrussel.graphics;
 
 public class Square extends Rectangle {
-    private static int count;
-    {count++; }
 
+    // variables
+    private static int count;
+
+    // initialisation block
+    {
+        count++;
+    }
+
+    // constructors
     public Square() {
         this(0);
     }
@@ -20,6 +29,7 @@ public class Square extends Rectangle {
         this(square.getSide(), square.getX(), square.getY());
     }
 
+    // methods
     public void setSide (int side) {
         super.setHeight(side);
         super.setWidth(side);

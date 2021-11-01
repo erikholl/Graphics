@@ -1,12 +1,15 @@
+// Jan and Emrah
+
 package be.intecbrussel.graphics;
 
 public class Rectangle extends Shape {
-
+    // variables
     private static int count;
     public static final int ANGLES = 4;
     private int width;
     private int height;
 
+    // constructors
     public Rectangle() {
         this(1, 1);
     }
@@ -26,6 +29,7 @@ public class Rectangle extends Shape {
         this(rectangle.getWidth(),rectangle.getHeight(),rectangle.getX(),rectangle.getY());
     }
 
+    // methods
     public void setWidth(int width2) {
         if (width2 < 0) {
             width = (int) -width2;

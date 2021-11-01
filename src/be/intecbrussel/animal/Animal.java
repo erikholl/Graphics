@@ -1,8 +1,12 @@
+// Nazif
+
 package be.intecbrussel.animal;
 
 public abstract class Animal {
+    // variables
     private String name;
 
+    // constructors
     public Animal() {
         this("no name was given");
     }
@@ -11,6 +15,7 @@ public abstract class Animal {
         setName(name);
     }
 
+    // methods
     public String getName(){
         return name;
     }
@@ -19,11 +24,9 @@ public abstract class Animal {
         this.name = name;
     }
 
-    public void move(){
-        move();
-    }
-    public void makeNoise(){
-        makeNoise();
-    }
+    // abstract methods
+    public abstract void move();
+
+    public abstract void makeNoise();
 }
 

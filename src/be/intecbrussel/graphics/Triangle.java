@@ -1,19 +1,21 @@
+// Marouane, Mustafa, Erik
+
 package be.intecbrussel.graphics;
 
 public class Triangle extends Shape{
-
+    // variables
     public static final int ANGLES = 3;
     private static int count;
-
     private int height;
     private int width;
     private int perpendicular;
 
+    // initialisation block
     {
         count++;
     }
 
-    // constructor
+    // constructors
     public Triangle() {
         this(0, 0, 0);
     }
