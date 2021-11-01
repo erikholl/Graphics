@@ -1,4 +1,4 @@
-// Nazif
+// Nazif,Uneys,Zuhur,Erik
 
 package be.intecbrussel.animal;
 
