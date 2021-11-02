@@ -43,12 +43,12 @@ public class Circle extends Shape{
     // this is our get area methode--> and return type
     @Override
     public double getArea(){
-        return (3 * radius);
+        return radius * radius* math.PI;
     }
 
     @Override
     public double getPerimeter(){
-        return (2 * radius);
+        return radius * radius* Math.PI;
     }
     // the formulas in the overrides are not correct, it is the programming
     // logic that is important :)
